@@ -6,6 +6,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),topaz)
+ifeq ($(TARGET_DEVICE),sapphire)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

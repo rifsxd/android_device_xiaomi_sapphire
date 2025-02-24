@@ -28,17 +28,11 @@ setdevicemodel() {
 
 process_device() {
 	local dev=$(getprop "ro.boot.hwname");
-	[ -z "$dev" ] && dev=topaz;
+	[ -z "$dev" ] && dev=sapphire;
 
 	setdevicename "$dev";
 
 	case "$dev" in
-	topaz)
-		setdevicemodel "23021RAA2Y";
-	;;
-	tapas)
-		setdevicemodel "23021RAAEG";
-	;;
 	sapphiren)
 		setdevicemodel "23124RA7EO";
 	;;
@@ -46,8 +40,8 @@ process_device() {
 		setdevicemodel "23129RAA4G";
 	;;
 	*)
-		setdevicename "topaz";
-		setdevicemodel "23021RAA2Y";
+		setdevicename "sapphire";
+		setdevicemodel "23129RAA4G";
 	;;
 	esac
 }

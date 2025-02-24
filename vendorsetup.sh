@@ -17,7 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
-FDEVICE="topaz"
+FDEVICE="sapphire"
 
 fox_get_target_device() {
 local chkdev=$(echo "$BASH_SOURCE" | grep -w \"$FDEVICE\")
@@ -35,7 +35,7 @@ fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export LC_ALL="C"
-	export TARGET_DEVICE_ALT="tapas,sapphire,sapphiren,topaz"
+	export TARGET_DEVICE_ALT="sapphire,sapphiren"
 	export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
 	export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
 	export FOX_VIRTUAL_AB_DEVICE=1

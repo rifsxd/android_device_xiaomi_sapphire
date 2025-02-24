@@ -27,7 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # devices
-TARGET_OTA_ASSERT_DEVICE := topaz,tapas,sapphire,sapphiren
+TARGET_OTA_ASSERT_DEVICE := sapphire,sapphiren
 
 # Boot control, Firmware
 PRODUCT_PACKAGES += \
@@ -116,7 +116,13 @@ TW_MAX_BRIGHTNESS       := 2047
 TW_EXTRA_LANGUAGES      := true
 TW_EXCLUDE_APEX         := true
 TW_INCLUDE_FASTBOOTD    := true
-TW_FRAMERATE 		:= 60
+TW_FRAMERATE 		    := 120
+
+# TWRP - Punch hole alignments
+TW_STATUS_ICONS_ALIGN   := center
+TW_CUSTOM_CPU_POS       := "50"
+TW_CUSTOM_CLOCK_POS     := "340" 
+TW_CUSTOM_BATTERY_POS   := "800"
 
 # Blacklist Goodix fingerprint. There's no reason to include this input in recovery
 TW_INPUT_BLACKLIST := "uinput-goodix"

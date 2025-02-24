@@ -15,7 +15,7 @@
 //
 
 cc_defaults {
-    name: "libgptutils.topaz",
+    name: "libgptutils.sapphire",
     export_include_dirs: ["."],
     recovery_available: true,
     shared_libs: [
@@ -31,12 +31,12 @@ cc_defaults {
 }
 
 cc_library {
-    name: "libgptutils-sg.topaz",
-    defaults: ["libgptutils.topaz"],
+    name: "libgptutils-sg.sapphire",
+    defaults: ["libgptutils.sapphire"],
 }
 
 cc_library {
-    name: "libgptutils-bsg.topaz",
-    defaults: ["libgptutils.topaz"],
+    name: "libgptutils-bsg.sapphire",
+    defaults: ["libgptutils.sapphire"],
     cflags: ["-D_BSG_FRAMEWORK_KERNEL_HEADERS"],
 }

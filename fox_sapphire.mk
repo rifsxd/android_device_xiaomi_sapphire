@@ -17,6 +17,7 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
+OF_MAINTAINER := rifsxd
 
 # screen settings
 OF_SCREEN_H := 2400

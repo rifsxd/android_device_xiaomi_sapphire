@@ -7,7 +7,7 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
 
-PRODUCT_RELEASE_NAME := topaz
+PRODUCT_RELEASE_NAME := sapphire
 DEVICE_PATH := device/xiaomi/$(PRODUCT_RELEASE_NAME)
 
 # Inherit from those products
@@ -27,7 +27,7 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 PRODUCT_DEVICE := $(PRODUCT_RELEASE_NAME)
 PRODUCT_NAME := twrp_$(PRODUCT_RELEASE_NAME)
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 12/13 4G
+PRODUCT_MODEL := Redmi Note 13 4G
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 #

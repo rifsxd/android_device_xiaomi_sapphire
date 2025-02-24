@@ -47,5 +47,5 @@ on property:twrp.modules.loaded=true
 
 # Symlink Flashlight
 on property:twrp.modules.loaded=true
-    symlink /sys/class/leds/led:torch/brightness /system/etc/flashlight/brightness
+    symlink /sys/class/leds/flashlight-back/brightness /system/etc/flashlight/brightness
 #
